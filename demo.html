@@ -20,13 +20,14 @@ html,body{
 </style>
 </head>
 <body>
-<div>
-	<audio id="music" src="music/1.mp3"></audio><!--歌曲-->
-</div>
-<script>
-$("#music").get(0).play();
-</script>
+<<audio id="music" src="music/1.mp3" loop=-1></audio>
+	<script src="js/jquery.js"></script>
+	<script>
+	$("#music").get(0).play();
+	</script>
+	
 <canvas id="canvas"></canvas>
+	
 <script>
 function initVars(){
 	pi=Math.PI;
