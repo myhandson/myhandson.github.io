@@ -24,7 +24,7 @@ html,body{
 <audio id="music" src="music/1.mp3"></audio><!--歌曲-->
 <script>
 function initVars(){
-
+	$("#music").get(0).play();
 	pi=Math.PI;
 	ctx=canvas.getContext("2d");
 	canvas.width=canvas.clientWidth;
@@ -298,7 +298,7 @@ function frame(){
 	draw();
 	doLogic();
 	requestAnimationFrame(frame);
-	$("#music").get(0).play();
+	
 }
 
 window.addEventListener("resize",()=>{
