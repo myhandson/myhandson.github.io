@@ -22,10 +22,13 @@ html,body{
 <body>
 <audio id="music" src="music/1.mp3"></audio><!--歌曲-->
 <canvas id="canvas"></canvas>
-
+<script>
+$("#music").get(0).play();
+</script>
+	
+	
 <script>
 function initVars(){
-	$("#music").get(0).play();
 	pi=Math.PI;
 	ctx=canvas.getContext("2d");
 	canvas.width=canvas.clientWidth;
