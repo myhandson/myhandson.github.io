@@ -383,47 +383,15 @@ body {
 
 
  
-<audio id="bgmusic" src="music/1.mp3" autoplay="autoplay" loop="loop"></audio>
+<audio id="music" src="music/1.mp3" loop=-1></audio><!--歌曲-->
+
+<script src="js/jquery.js"></script>
+<script>
+$("#music").get(0).play();
 
 
-<script type="text/javascript">
-
-document.addEventListener('DOMContentLoaded', function () {
- 
-            function audioAutoPlay() {
- 
-              var audio = document.getElementById('bgmusic');
- 
-                  audio.play();
- 
-              document.addEventListener("WeixinJSBridgeReady", function () {
- 
-                  audio.play();
- 
-              }, false);
- 
-            }
- 
-            audioAutoPlay();
- 
-            });
- 
-            if (/i(Phone|P(o|a)d)/.test(navigator.userAgent)) {
- 
-            $(document).one('touchstart',
- 
-            function(e) {
- 
-                $('#bgmusic').get(0).touchstart = true;
- 
-                $('#bgmusic').get(0).play();
- 
-                return false;
- 
-            });
- 
-        }
 </script>
+
 
 </body>
 </html>
